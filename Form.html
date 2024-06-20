@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details - Foodie Buddy</title>
+    <link rel="stylesheet" href="Main_script.js">
+    <style>
+        body {
+             margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('background pic/sign\ bgpic.jpeg')no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: rgb(234, 218, 218);}
+            #box1{
+             background: transparent;
+            padding: 40px 50px;
+            border:2px solid #171615;
+            backdrop-filter: blur(2px);
+            box-shadow: 0 0 10px rgb(244, 230, 230);
+            color: #1a1919;
+            border-radius: 10px;
+            text-align: center;
+            width: 400px;
+            height: 300px;
+            border-radius: 5%;
+            opacity: 120%;
+        }
+        label {
+                display: block;
+                margin-bottom: 20px;
+        
+            }
+            #age{
+         justify-content: center;
+         padding: 3px 40px;
+         border-radius: 20px;
+         width: 200px;
+         margin-top: 10px;
+         text-align: center;
+         padding-left: 0;
+        
+
+        }
+        #box1 h1{
+            margin-top: 20px;
+            color: white;
+        }
+        #diet{
+            justify-content: center;
+            padding: 3px 5px;
+            border-radius: 20px;
+            width: 200px;
+        
+            text-align: center;
+            padding-left: 10px;
+            
+           }
+           #box1 h1{
+            border:0.1px #401f05; 
+            border-radius: 3px;
+           }
+           button {
+            background-color: #4c915c;
+            color: #fffcfc;
+            border: none;
+            border: none;
+            outline: none;
+            border-radius: 25px;
+             cursor: pointer;
+             height: 30px;
+             text-align: center;
+             width: 100px; 
+        }
+        button:hover {
+            background-color: #b1c0b2;
+        }
+        .female{
+            margin-left: 10px;
+        }
+    
+        #color{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+    <h1>USER DETAILS</h1>
+    <form id="myForm">
+        <label for="age"></label>
+        <select id="age" name="age">
+            <option value="Age">Age</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+            <option value="32">32</option>
+            <option value="33">33</option>
+            <option value="34">34</option>
+            <option value="35">35</option>
+            <option value="36">36</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+            <option value="45">45</option>
+            <option value="46">46</option>
+            <option value="47">47</option>
+            <option value="48">48</option>
+            <option value="49">49</option>
+            <option value="50">50</option>
+            <option value="51">51</option>
+            <option value="52">52</option>
+            <option value="53">53</option>
+            <option value="54">54</option>
+            <option value="55">55</option>
+            <option value="56">56</option>
+            <option value="57">57</option>
+            <option value="58">58</option>
+            <option value="59">59</option>
+            <option value="60">60</option>
+        </select>
+        <br>
+
+        <label for="diet"></label>
+        <select id="diet" name="diet">
+            <option value="diet preference">Diet Preference</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="non-vegetarian">Non-Vegetarian</option>
+            <option value="vegan">Vegan</option>
+        </select>
+        <br>
+        <div id="color">
+        <label for="gender" id="gender"></label>
+            <input type="radio" id="gender" name="gender" value="male" class="male">
+            Male
+            <input type="radio" id="gender" name="gender" value="female" class="female" >
+            Female
+            </div>
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+     </div>
+    <script src="Main_script.js"></script>
+</body>
+</html>

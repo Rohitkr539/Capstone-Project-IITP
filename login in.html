@@ -1,0 +1,167 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Foodie Buddy</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('background pic/loginpic.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+        .login-container {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 55px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .login-container h1 {
+            margin-bottom: 20px;
+        }
+        .login-container input[type="text"], .login-container input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 100px;
+        }
+        .login-container input[type="submit"] {
+            width: 50%;
+            padding: 10px;
+            border: none;
+            border-radius: 100px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .login-container a {
+            color: #ddd;
+            text-decoration: none;
+        }
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+        .login-container .resendotp {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #button{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form>
+            <input type="text" placeholder="Phone no" required>
+            <input type="password" placeholder="OTP" required>
+        </form>
+
+         <a href="Form.html"><input  type="submit" value="Login" id="button" ></a> 
+            
+     
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Foodie Buddy</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('background pic/loginpic.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+        .login-container {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 55px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .login-container h1 {
+            margin-bottom: 20px;
+        }
+        .login-container input[type="text"], .login-container input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 100px;
+        }
+        .login-container input[type="submit"] {
+            width: 50%;
+            padding: 10px;
+            border: none;
+            border-radius: 100px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .login-container a {
+            color: #ddd;
+            text-decoration: none;
+        }
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+        .login-container .resendotp {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #button{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <input type="text" id="phone" placeholder="Phone no" required>
+            <input type="password" id="otp" placeholder="OTP" required>
+            <input type="submit" value="Login" id="button">
+        </form>
+    </div>
+    
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            
+            var phone = document.getElementById('phone').value;
+            var otp = document.getElementById('otp').value;
+            
+            if (phone === "1234567890" && otp === "1234") {
+                alert("You're Logged-In");
+                window.location.href = "Form.html"; 
+            } else {
+                alert("Invalid phone number or OTP");
+            }
+        });
+    </script>
+</body>
+</html>
